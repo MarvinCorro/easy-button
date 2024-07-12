@@ -1,136 +1,160 @@
 const PrimarySizeModel = {
+  IconSmall: {
+    width: "56px",
+    height: "56px",
+  },
   Small: {
-    width: "155px",
+    width: "107px",
     height: "40px",
     padding: "5px",
   },
   Medium: {
-    width: "174px",
+    width: "148px",
     height: "44px",
     padding: "5px",
   },
   Large: {
-    width: "182px",
+    width: "156px",
     height: "48px",
     padding: "5px",
   },
   ExtraLarge: {
-    width: "216px",
+    width: "148px",
     height: "60px",
     padding: "5px",
   }
 }
 
 const SecondarySizeModel = {
+  IconSmall: {
+    width: "56px",
+    height: "56px",
+  },
   Small: {
-    width: "155px",
+    width: "107px",
     height: "40px",
     padding: "5px",
   },
   Medium: {
-    width: "174px",
+    width: "148px",
     height: "44px",
     padding: "5px",
   },
   Large: {
-    width: "182px",
+    width: "156px",
     height: "48px",
     padding: "5px",
   },
   ExtraLarge: {
-    width: "216px",
+    width: "148px",
     height: "60px",
     padding: "5px",
   }
 }
 
 const TertiarySizeModel = {
+  IconSmall: {
+    width: "56px",
+    height: "56px",
+  },
   Small: {
-    width: "155px",
+    width: "107px",
     height: "40px",
     padding: "5px",
   },
   Medium: {
-    width: "174px",
+    width: "148px",
     height: "44px",
     padding: "5px",
   },
   Large: {
-    width: "182px",
+    width: "156px",
     height: "48px",
     padding: "5px",
   },
   ExtraLarge: {
-    width: "216px",
+    width: "148px",
     height: "60px",
     padding: "5px",
   }
 }
 
 const LinkColorSizeModel = {
+  IconSmall: {
+    width: "24px",
+    height: "24px",
+  },
   Small: {
-    width: "155px",
-    height: "40px",
+    width: "100px",
+    height: "30px",
     padding: "5px",
   },
   Medium: {
-    width: "174px",
-    height: "44px",
+    width: "116px",
+    height: "30px",
     padding: "5px",
   },
   Large: {
-    width: "182px",
-    height: "48px",
+    width: "116px",
+    height: "30px",
     padding: "5px",
   },
   ExtraLarge: {
-    width: "216px",
-    height: "60px",
+    width: "116px",
+    height: "30px",
     padding: "5px",
   }
 }
 
 const LinkGraySizeModel = {
+  IconSmall: {
+    width: "24px",
+    height: "24px",
+  },
   Small: {
-    width: "155px",
-    height: "40px",
+    width: "100px",
+    height: "30px",
     padding: "5px",
   },
   Medium: {
-    width: "174px",
-    height: "44px",
+    width: "116px",
+    height: "30px",
     padding: "5px",
   },
   Large: {
-    width: "182px",
-    height: "48px",
+    width: "116px",
+    height: "30px",
     padding: "5px",
   },
   ExtraLarge: {
-    width: "216px",
-    height: "60px",
+    width: "116px",
+    height: "30px",
     padding: "5px",
   }
 }
 
 const DestructiveSizeModel = {
+  IconSmall: {
+    width: "56px",
+    height: "56px",
+  },
   Small: {
-    width: "155px",
+    width: "107px",
     height: "40px",
     padding: "5px",
   },
   Medium: {
-    width: "174px",
+    width: "148px",
     height: "44px",
     padding: "5px",
   },
   Large: {
-    width: "182px",
+    width: "156px",
     height: "48px",
     padding: "5px",
   },
   ExtraLarge: {
-    width: "216px",
+    width: "148px",
     height: "60px",
     padding: "5px",
   }
@@ -140,25 +164,25 @@ export const ButtonModel = {
   Primary: {
     normal: {
       border: 'none',
-      borderRadius: '15px',
+      borderRadius: '5px',
       backgroundColor: "#4338CA",
       color: "#FFFFFF",
     },
     hover: {
       border: 'none',
-      borderRadius: '15px',
+      borderRadius: '5px',
       backgroundColor: "#3730A3",
       color: "#FFFFFF",
     },
     focus: {
       border: '1px solid rgba(68, 76, 231, .12)',
-      borderRadius: '15px',
+      borderRadius: '5px',
       backgroundColor: "#3730A3",
       color: "#FFFFFF",
     },
     disabled: {
       border: 'none',
-      borderRadius: '15px',
+      borderRadius: '5px',
       backgroundColor: "#F5F5F5",
       color: "#A3A3A3",
     },
@@ -167,25 +191,25 @@ export const ButtonModel = {
   Secondary: {
     normal: {
       border: '1px solid #E6E6E6',
-      borderRadius: '15px',
+      borderRadius: '5px',
       backgroundColor: "#FFFFFF",
       color: "#171717",
     },
     hover: {
       border: '1px solid #E6E6E6',
-      borderRadius: '15px',
+      borderRadius: '5px',
       backgroundColor: "#FAFAFA",
       color: "#0A0A0A",
     },
     focus: {
       border: '1px solid rgba(68, 76, 231, .12)',
-      borderRadius: '15px',
+      borderRadius: '5px',
       backgroundColor: "#E6E6E6",
       color: "#0A0A0A",
     },
     disabled: {
       border: 'none',
-      borderRadius: '15px',
+      borderRadius: '5px',
       backgroundColor: "#F5F5F5",
       color: "#A3A3A3",
     },
@@ -199,13 +223,13 @@ export const ButtonModel = {
     },
     hover: {
       border: 'none',
-      borderRadius: '15px',
+      borderRadius: '5px',
       backgroundColor: "#FAFAFA",
       color: "#4338CA",
     },
     focus: {
       border: '1px solid rgba(68, 76, 231, .12)',
-      borderRadius: '15px',
+      borderRadius: '5px',
       backgroundColor: "#FAFAFA",
       color: "#4338CA",
     },
@@ -229,7 +253,7 @@ export const ButtonModel = {
     },
     focus: {
       border: '1px solid rgba(68, 76, 231, .12)',
-      borderRadius: '15px',
+      borderRadius: '5px',
       backgroundColor: "transparent",
       color: "#3730A3",
     },
@@ -248,13 +272,13 @@ export const ButtonModel = {
     },
     hover: {
       border: 'none',
-      borderRadius: '15px',
+      borderRadius: '5px',
       backgroundColor: "transparent",
       color: "#171717",
     },
     focus: {
       border: '1px solid rgba(68, 76, 231, .12)',
-      borderRadius: '15px',
+      borderRadius: '5px',
       backgroundColor: "transparent",
       color: "#171717",
     },
@@ -268,25 +292,25 @@ export const ButtonModel = {
   Destructive: {
     normal: {
       border: 'none',
-      borderRadius: '15px',
+      borderRadius: '5px',
       backgroundColor: "#DC2626",
       color: "#FFFFFF",
     },
     hover: {
       border: 'none',
-      borderRadius: '15px',
+      borderRadius: '5px',
       backgroundColor: "#B91C1C",
       color: "#FFFFFF",
     },
     focus: {
       border: '1px solid rgba(217, 45, 32, .12)',
-      borderRadius: '15px',
+      borderRadius: '5px',
       backgroundColor: "#B91C1C",
       color: "#FFFFFF",
     },
     disabled: {
       border: 'none',
-      borderRadius: '15px',
+      borderRadius: '5px',
       backgroundColor: "#4338CA",
       color: "#FFFFFF",
     },

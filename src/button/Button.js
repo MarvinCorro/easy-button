@@ -3,6 +3,7 @@ import { useState, useRef } from "react";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faStar } from "@fortawesome/fontawesome-free-solid";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import "./css/styles.css";
 
@@ -13,7 +14,7 @@ library.add();
 export default function Button({ 
   onClick = (e) => {},
   disabled= false,
-  text = "Submit",
+  text = "",
   type = "button",
   size = "md",
   style = 'primary',
@@ -33,9 +34,9 @@ export default function Button({
         return ButtonModel.Secondary
       case "tertiary":
         return ButtonModel.Tertiary
-      case "link color":
+      case "link-color":
         return ButtonModel.LinkColor
-      case "link gray":
+      case "link-gray":
         return ButtonModel.LinkGray
       case "destructive":
         return ButtonModel.Destructive
@@ -45,8 +46,9 @@ export default function Button({
   }
 
   const determineSize = (model) => {
-    console.log(model)
     switch (size) {
+      case "icon-small":
+        return model.size.IconSmall
       case "small":
       case "sm":
         return model.size.Small
@@ -56,11 +58,20 @@ export default function Button({
       case "large":
       case "lg":
         return model.size.Large
-      case "extra large":
+      case "extra-large":
       case "xl":
         return model.size.ExtraLarge
       default:
         return model.size.Medium
+    }
+  }
+
+  const determineIcon = (icon) => {
+    switch(icon) {
+      case "star":
+        return faStar
+      default:
+        return null;
     }
   }
 
@@ -73,7 +84,10 @@ export default function Button({
   const model = determineModel();
   const sanatizedSize = determineSize(model);
   const combinedStyles = { ...model[currentModelState], ...sanatizedSize };
-
+  trailingIcon = determineIcon(trailingIcon);
+  leadingIcon = determineIcon(leadingIcon);
+  //TODO remove this or add it as an option @mcorro
+  const iconStyles = {}
   return (
     <button
       ref={buttonRef}
@@ -92,9 +106,9 @@ export default function Button({
       style={combinedStyles}
       className="easy-button-container"
       >
-      {leadingIcon && <i className="easy-button-leading-icon">{leadingIcon}</i>}
-      {text}
-      {trailingIcon && <i className="easy-button-trailing-icon">{trailingIcon}</i>}
+      {leadingIcon && <i style={iconStyles} className="easy-button-leading-icon"><FontAwesomeIcon icon={leadingIcon}/></i>}
+      {text.length > 0 && <span style={{paddingLeft: '5px', paddingRight: '5px'}}>{text}</span>}
+      {trailingIcon && <i style={iconStyles} className="easy-button-trailing-icon"><FontAwesomeIcon icon={trailingIcon}/></i>}
     </button>
   );
 }
